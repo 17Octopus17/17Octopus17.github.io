@@ -1,0 +1,122 @@
+body {
+  background-image: url("https://images6.alphacoders.com/309/309415.png");
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: center;
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  background-position: center center;
+  width: 50%;
+  background: white;
+  align-self: center;
+  opacity: 0.9;
+  paddin: 2px;
+}
+.button {
+  display: block;
+  width: 180px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.button:hover {
+  background-color: #14d8e7;
+  border: 1px solid white;
+}
+
+p {
+  font-family: Helvetica;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  top: 30px;
+}
+/* сделать так, чтобы шар не прыгал когда нажимаешь на кнопку */
+
+.ball {
+  width: 500px;
+  height: 500px;
+  background: black;
+  border-radius: 100%;
+  display: center;
+  position: relative;
+  top: 80px;
+  margin: 0 auto;
+}
+
+#animation {
+  animation-name: shake;
+  animation-duration: 2s;
+}
+@keyframes shake {
+  0% {
+    left: 0px;
+  }
+   25% {
+    left: 25px;
+  }
+  50% {
+    left: -25px;
+  }
+   75% {
+    left: 25px;
+  }
+  100% {
+    left: -25px;
+  }
+}
+/* подумать еще какой градиет должен быть у дыры, возможно взять однотонный */
+
+.hole {
+  width: 250px;
+  height: 250px;
+  background-image: url("http://pm1.narvii.com/6814/25f696c79c094668ca901f847d39eed3794f1374_00.jpg");
+  border: 2px solid #05184d;
+  border-radius: 100%;
+  display: center;
+  position: relative;
+  top: 80px;
+  margin: 0 auto;
+}
+
+/*.shake {
+  animation: shake 4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+*/
+
+.fade-in {
+  animation: fadeIn 6s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+}
+
+  to {
+    opacity: 1;
+  
+}
+  }
+
+.answers {
+  display: center;
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+}
